@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-# kilter_grade_prediction
-Prediction of the difficulty grade of climbs on the Kilter Board using machine learning
-=======
 # Kilter Grade Prediction
 
 This project aims to predict the difficulty grade of climbs on the Kilter Board using machine learning, in order to assist route setters in grading climbs consistently and objectively.
@@ -41,11 +38,12 @@ We want to predict a continuous variable: the community consensus on the climb's
 ## 📊 Results
 The best-performing model, **XGBoost**, achieves the following results on the test set:
 
-| Model          | Test MAE | ±1 Grade | ±2 Grades | Key Features                     |
-|----------------|----------|----------|-----------|----------------------------------|
-| **XGBoost**    | **1.38** | 78%      | 96%       | Avg move distance, angle, hold spread |
-| Decision Tree  | 1.97     | 65%      | 90%       | Board height, hand/foot counts   |
-| Ridge          | 2.12     | 60%      | 88%       | Multi-hot hold/role encodings    |
+| Model          | Test MAE | ±1 Grade | ±2 Grades | 
+|----------------|----------|----------|-----------|
+| **XGBoost**    | **1.28** | 65%      | 87%       | 
+| Ridge          | 1.38     | 62%      | 84%       | 
+| Decision Tree  | 1.94     | 47%      | 71%       | 
+
 
 > *MAE = Mean Absolute Error in grade steps (e.g., 1.38 = ~1.4 grades off on average).  
 > ±1/±2 = Percentage of predictions within 1 or 2 grade steps of the true value.*
@@ -74,9 +72,13 @@ This project also lays the foundation for **Kilter Problem Generator**, by train
 ### Run the pipeline
 
 python utils/data_preparation.py --db_input data/raw/raw_kilter_data.db --csv_output data/processed/data_cleaned.csv
+
 python utils/feature_engineering.py --input data/processed/data_cleaned.csv --output_train data/processed/data_train.csv --output_test data/processed/data_test.csv
-python models/training/XGB_modeltrain.py --train-csv data/processed/data_train.csv --test-csv data/processed/data_test.csv --model-out models/saved_models/XGB_model.joblib
+
+python models/training/XGB_modeltrain.py --train-csv data/processed/data_train.csv --test-csv data/processed/data_test.csv --model-out models/saved_models/XGB_model.
+
 python models/evaluation/model_metrics.py --model models/saved_models/XGB_model.joblib --test-csv data/processed/data_test.csv
+
 
 The resulting figures are saved in /models/results
 
