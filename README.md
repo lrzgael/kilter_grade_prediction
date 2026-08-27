@@ -5,7 +5,7 @@ This project aims to predict the difficulty grade of climbs on the Kilter Board 
 
 ---
 
-![Kilter Board](data/img/kilter.jpg)
+![Kilter Board](data/img/kilter.jpg){: style="max-width: 80%; height: auto;" }
 *16x12 Original Layout – The standard Kilter Board configuration.*
 
 ---
@@ -49,11 +49,10 @@ The best-performing model, **XGBoost**, achieves the following results on the te
 > ±1/±2 = Percentage of predictions within 1 or 2 grade steps of the true value.*
 
 ---
-
-![XGBmodel](models/results/XGB_model_test.png)
+![XGBmodel](models/results/XGB_model_test.png){: style="max-width: 80%; height: auto;" }
 *XGBmodel on the test dataset*
-
 ---
+
 
 **Key Insights**:
 - Climbs with longer distances between holds or steeper angles are consistently graded harder.
@@ -88,4 +87,4 @@ The resulting figures are saved in /models/results
 - Open notebooks/01_exploratory_analysis.ipynb for data visualization and analyses
 - Open notebooks/02_feature_engineering.ipynb for feature engineering.
 - Use notebooks/03_model_training_and_evaluation.ipynb to analyze models performance.
->>>>>>> master
+
