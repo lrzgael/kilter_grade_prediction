@@ -50,7 +50,6 @@ The best-performing model, **XGBoost**, achieves the following results on the te
 
 ---
 ![XGBmodel](models/results/XGB_model_test.png)
-*XGBmodel on the test dataset*
 ---
 
 
