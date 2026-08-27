@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Kilter Grade Prediction
 
 This project aims to predict the difficulty grade of climbs on the Kilter Board using machine learning, in order to assist route setters in grading climbs consistently and objectively.
