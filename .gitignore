@@ -24,6 +24,10 @@ wheels/
 # ---------- Notebooks ----------
 .ipynb_checkpoints/
 
+# ---------- Data ----------
+*.db
+*.csv
+
 # ---------- IDE/Editor ----------
 .idea/
 .vscode/
