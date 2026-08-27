@@ -5,7 +5,7 @@ This project aims to predict the difficulty grade of climbs on the Kilter Board 
 
 ---
 
-![Kilter Board](data/img/kilter.jpg){: style="max-width: 80%; height: auto;" }
+![Kilter Board](data/img/kilter.jpg)
 *16x12 Original Layout – The standard Kilter Board configuration.*
 
 ---
@@ -49,7 +49,7 @@ The best-performing model, **XGBoost**, achieves the following results on the te
 > ±1/±2 = Percentage of predictions within 1 or 2 grade steps of the true value.*
 
 ---
-![XGBmodel](models/results/XGB_model_test.png){: style="max-width: 80%; height: auto;" }
+![XGBmodel](models/results/XGB_model_test.png)
 *XGBmodel on the test dataset*
 ---
 
