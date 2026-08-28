@@ -71,7 +71,7 @@ This project also lays the foundation for **Kilter Problem Generator**, by train
 ```python
 python utils/data_preparation.py --db_input data/raw/raw_kilter_data.db --csv_output data/processed/data_cleaned.csv
 python utils/feature_engineering.py --input data/processed/data_cleaned.csv --output_train data/processed/data_train.csv --output_test data/processed/data_test.csv
-python models/training/XGB_modeltrain.py --train-csv data/processed/data_train.csv --test-csv data/processed/data_test.csv --model-out models/saved_models/XGB_model.
+python models/training/XGB_modeltrain.py --train-csv data/processed/data_train.csv --test-csv data/processed/data_test.csv --model-out models/saved_models/XGB_model.joblib
 python models/evaluation/model_metrics.py --model models/saved_models/XGB_model.joblib --test-csv data/processed/data_test.csv
 ```
 
