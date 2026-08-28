@@ -36,7 +36,8 @@ We want to predict a continuous variable: the community consensus on the climb's
 ---
 
 ## 📊 Results
-The best-performing model, **XGBoost**, achieves the following results on the test set:
+
+We train and evaluate three regression models that achieves the following performances on the test dataset :
 
 | Model          | Test MAE | ±1 Grade | ±2 Grades | 
 |----------------|----------|----------|-----------|
