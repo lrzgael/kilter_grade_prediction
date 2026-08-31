@@ -260,16 +260,16 @@ def parse_args():
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument("--model", type=Path, 
-                        default="../saved_models/XGB_model.joblib",
+                        default="models/saved_models/RF_model.joblib",
                         help="Path to the trained .joblib model.")
     parser.add_argument("--train-csv", type=Path, 
-                        default="../../data/processed/data_processed_train.csv",
+                        default="data/processed/data_processed_train.csv",
                         help="Path to the processed training CSV.")
     parser.add_argument("--test-csv", type=Path, 
-                        default="../../data/processed/data_processed_test.csv",
+                        default="data/processed/data_processed_test.csv",
                         help="Path to the processed test CSV.")
     parser.add_argument("--results-dir", type=Path, 
-                        default="../results/",
+                        default="models/results/",
                         help="Directory where figures and CSVs are saved.")
     parser.add_argument("--random-state", type=int, default=DEFAULT_RANDOM_STATE,
                         help="Random seed (permutation importance).")

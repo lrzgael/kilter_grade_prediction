@@ -165,19 +165,19 @@ def parse_args():
     parser.add_argument(
         "--input_csv",
         type=str,
-        default="../data/processed/data_cleaned.csv",
+        default="data/processed/data_cleaned.csv",
         help="Path to cleaned input CSV.",
     )
     parser.add_argument(
         "--output_train_csv",
         type=str,
-        default="../data/processed/data_processed_train.csv",
+        default="data/processed/data_processed_train.csv",
         help="Path to output training CSV.",
     )
     parser.add_argument(
         "--output_test_csv",
         type=str,
-        default="../data/processed/data_processed_test.csv",
+        default="data/processed/data_processed_test.csv",
         help="Path to output test CSV.",
     )
     parser.add_argument(

@@ -245,13 +245,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--db_input",
         type=str,
-        default="../data/raw/raw_kilter_data.db",
+        default="data/raw/raw_kilter_data.db",
         help="Path to the BoardLib SQLite database file"
     )
     parser.add_argument(
         "--csv_output",
         type=str,
-        default="../data/processed/data_cleaned.csv",
+        default="data/processed/data_cleaned.csv",
         help="Path to save the cleaned CSV output file"
     )
 
